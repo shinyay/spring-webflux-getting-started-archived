@@ -3,6 +3,14 @@
 Overview
 
 ## Description
+### Dependency
+- spring-boot-starter-webflux
+
+```kotlin
+dependencies {
+	implementation("org.springframework.boot:spring-boot-starter-webflux")
+}
+```
 
 ## Demo
 
