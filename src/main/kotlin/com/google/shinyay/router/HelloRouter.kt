@@ -11,5 +11,8 @@ import org.springframework.web.reactive.function.server.*
 class HelloRouter(val handler: HelloHandler) {
 
     @Bean
-    fun route() = router { accept(MediaType.APPLICATION_JSON).nest { GET("/hello", handler::hello) } }
+    fun route() = router {
+        accept(MediaType.APPLICATION_JSON)
+                .nest { GET("/hello", handler::hello) }
+    }
 }
