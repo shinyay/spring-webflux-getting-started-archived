@@ -15,7 +15,7 @@ class HelloHandler {
                 |{
                 |    "message" : "Hello"
                 |}
-        """.trimIndent()
+        """.trimMargin()
         return ServerResponse.ok()
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(Flux.just(json), String::class.java)
