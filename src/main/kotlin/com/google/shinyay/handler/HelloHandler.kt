@@ -1,4 +1,4 @@
-package handler
+package com.google.shinyay.handler
 
 import org.springframework.http.MediaType
 import org.springframework.stereotype.Component
