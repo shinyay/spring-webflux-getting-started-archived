@@ -12,6 +12,18 @@ dependencies {
 }
 ```
 
+### WebApplicationType.REACTIVE
+Define **REACIVE**
+
+```kotlin
+fun main(args: Array<String>) {
+    SpringApplicationBuilder()
+            .sources(DemoApplication::class.java)
+            .web(WebApplicationType.REACTIVE)
+            .run(*args)
+}
+```
+
 ## Demo
 
 ## Features
