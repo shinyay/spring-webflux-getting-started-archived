@@ -13,7 +13,7 @@ dependencies {
 ```
 
 ### WebApplicationType.REACTIVE
-Define **REACIVE**
+The application should run as a **REACTIVE** web application and should start an embedded reactive web server.
 
 ```kotlin
 fun main(args: Array<String>) {
