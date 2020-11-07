@@ -23,6 +23,10 @@ fun main(args: Array<String>) {
             .run(*args)
 }
 ```
+### Functional Endpoints
+WebFlux.fn are used to route and handle requests and contracts.
+
+HTTP request is handled with a `HandlerFunction`
 
 ### WebFlux Handler
 We use a **handler** to handle the request and create a response for Spring Reactive.
