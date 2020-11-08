@@ -37,7 +37,10 @@ We use a **handler** to handle the request and create a response for Spring Reac
 HandlerFunction is equivalent of the body of a `@RequestMapping` method.
 `RouterFunction` is the equivalent of a `@RequestMapping` annotation
 
-
+#### Router Function
+Router functions are evaluated in order.
+If the first route does not match, the second is evaluated, and so on. 
+This behavior is different from the annotation-based programming model.
 
 ## Demo
 
