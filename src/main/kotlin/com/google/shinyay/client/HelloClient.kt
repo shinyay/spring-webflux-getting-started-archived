@@ -1,4 +1,7 @@
 package com.google.shinyay.client
 
-class HelloClient {
+import org.springframework.web.reactive.function.client.WebClient
+
+class HelloClient(val client: WebClient = WebClient.create("http://localhost:8080")) {
+
 }
