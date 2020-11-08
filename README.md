@@ -42,6 +42,15 @@ Router functions are evaluated in order.
 If the first route does not match, the second is evaluated, and so on. 
 This behavior is different from the annotation-based programming model.
 
+```kotlin
+@Bean
+fun route() = router {
+    accept(MediaType.APPLICATION_JSON)
+            .nest { GET("/person", handler::listPeople)
+                    GET("/person/{id}", handler::getPerson)
+            }
+}
+```
 ## Demo
 
 ## Features
