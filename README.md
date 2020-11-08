@@ -51,6 +51,11 @@ fun route() = router {
             }
 }
 ```
+
+#### ServerResponse
+ServerResponse provides access to the HTTP response.
+You can set the response status, to add response headers, or to provide a body.
+
 ## Demo
 
 ## Features
