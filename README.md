@@ -28,11 +28,13 @@ WebFlux.fn are used to route and handle requests and contracts.
 
 HTTP request is handled with a `HandlerFunction`.
 HandlerFunction takes `ServerRequest` and returns a delayed `ServerResponse`.
+
 - `Mono<ServerResponse>`
 - `Flux<ServerResponse>`
 
 ### WebFlux Handler
 We use a **handler** to handle the request and create a response for Spring Reactive.
+HandlerFunction is equivalent of the body of a `@RequestMapping` method
 
 
 
