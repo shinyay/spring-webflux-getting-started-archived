@@ -34,7 +34,8 @@ HandlerFunction takes `ServerRequest` and returns a delayed `ServerResponse`.
 
 ### WebFlux Handler
 We use a **handler** to handle the request and create a response for Spring Reactive.
-HandlerFunction is equivalent of the body of a `@RequestMapping` method
+HandlerFunction is equivalent of the body of a `@RequestMapping` method.
+`RouterFunction` is the equivalent of a `@RequestMapping` annotation
 
 
 
