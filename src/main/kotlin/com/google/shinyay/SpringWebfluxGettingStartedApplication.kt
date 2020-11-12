@@ -1,5 +1,6 @@
 package com.google.shinyay
 
+import com.google.shinyay.client.HelloClient
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.boot.WebApplicationType
@@ -16,6 +17,7 @@ fun main(args: Array<String>) {
 			.sources(SpringWebfluxGettingStartedApplication::class.java)
 			.web(WebApplicationType.REACTIVE)
 			.run(*args)
+	HelloClient().getResult()
 }
 
 val Any.logger: Logger
