@@ -30,7 +30,9 @@ HTTP request is handled with a `HandlerFunction`.
 HandlerFunction takes `ServerRequest` and returns a delayed `ServerResponse`.
 
 - `Mono<ServerResponse>`
+  - Single Result
 - `Flux<ServerResponse>`
+  - Multiple Results, like List<E>
 
 ### WebFlux Handler
 We use a **handler** to handle the request and create a response for Spring Reactive.
